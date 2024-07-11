@@ -181,6 +181,7 @@ jobs:
         name: image-report
         path: ${{github.workspace}}
     - name: Upload reports
+      uses: actions/checkout@v3
       env:
        DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
        AZURE_ACCESS_TOKEN: ${{ steps.token-gen.outputs.azureAccessToken }}
