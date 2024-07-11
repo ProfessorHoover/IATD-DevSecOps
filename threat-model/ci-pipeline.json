@@ -19,12 +19,12 @@
         "cells": [
           {
             "position": {
-              "x": 471.9999999999998,
-              "y": 199.0000000000001
+              "x": 550,
+              "y": 70.00000000000045
             },
             "size": {
-              "width": 160,
-              "height": 250
+              "width": 220,
+              "height": 300
             },
             "shape": "trust-boundary-box",
             "attrs": {
@@ -33,7 +33,7 @@
               }
             },
             "zIndex": -1,
-            "id": "a8315c0c-62c9-4393-be30-08d46980f3e7",
+            "id": "dd15a643-24d1-46a3-933e-8e1362e20ea6",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "SVC",
@@ -44,37 +44,12 @@
           },
           {
             "position": {
-              "x": 687,
-              "y": 166
+              "x": 876,
+              "y": 611
             },
             "size": {
-              "width": 850,
-              "height": 600
-            },
-            "shape": "trust-boundary-box",
-            "attrs": {
-              "headerText": {
-                "text": "Pipeline Executor"
-              }
-            },
-            "zIndex": -1,
-            "id": "35162517-9355-4207-bdc5-d6f6c15187a6",
-            "data": {
-              "type": "tm.BoundaryBox",
-              "name": "Pipeline Executor",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false
-            }
-          },
-          {
-            "position": {
-              "x": 822,
-              "y": 855.0000000000006
-            },
-            "size": {
-              "width": 560,
-              "height": 160
+              "width": 440,
+              "height": 180
             },
             "shape": "trust-boundary-box",
             "attrs": {
@@ -83,7 +58,7 @@
               }
             },
             "zIndex": -1,
-            "id": "4d01c5ed-51cc-4db6-b67f-d66d6f8c7973",
+            "id": "e8088bd4-c92e-4d61-bbe0-a3f4cd3cf092",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Internal Instance",
@@ -94,8 +69,33 @@
           },
           {
             "position": {
-              "x": 100,
-              "y": 360
+              "x": 802,
+              "y": 70.00000000000205
+            },
+            "size": {
+              "width": 720,
+              "height": 480
+            },
+            "shape": "trust-boundary-box",
+            "attrs": {
+              "headerText": {
+                "text": "Pipeline Executor"
+              }
+            },
+            "zIndex": -1,
+            "id": "2639f843-63c2-4afd-b8de-e5f467a2c772",
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Pipeline Executor",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 190,
+              "y": 250
             },
             "size": {
               "width": 112.5,
@@ -114,7 +114,7 @@
             "visible": true,
             "shape": "actor",
             "zIndex": 1,
-            "id": "48473ee1-e653-4718-96e3-98add03ea106",
+            "id": "d1a3c7cf-45c8-43e0-a994-b634bc0175cb",
             "data": {
               "type": "tm.Actor",
               "name": "Developer",
@@ -125,29 +125,25 @@
               "providesAuthentication": false,
               "threats": [
                 {
-                  "id": "dcee22fc-5839-4391-a82d-c4c6c03223e9",
+                  "id": "5de3e873-3b47-4dbe-b5f5-3ab68cc47c08",
                   "title": "Developer commits secret to Git",
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Spoofing",
                   "description": "A developer commits secrets to version control either accidentally or on purpose. An angry employee with read access to the repository finds the secrets and proceeds to use them to steal end-user data",
-                  "mitigation": "Adhere to the principal of \"Need to Know\" and ensure that production secrets are not shared with individuals who don't have a need to know.\n\nAdhere to the principal of \"Least Privilege\" and ensure secrets only have the permissions to access what they require",
+                  "mitigation": "Adhere to the principal of Need to Know and ensure that production secrets are not shared with individuals who don't have a need to know.\n\nAdhere to the principal of Least Privilege and ensure secrets only have the permissions to access what they require",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 1,
                   "score": ""
                 }
-              ],
-              "threatFrequency": {
-                "spoofing": 1,
-                "repudiation": 0
-              }
+              ]
             }
           },
           {
             "position": {
-              "x": 283,
-              "y": 360
+              "x": 410,
+              "y": 250
             },
             "size": {
               "width": 60,
@@ -166,7 +162,7 @@
             "visible": true,
             "shape": "process",
             "zIndex": 2,
-            "id": "629a3adb-f5ef-483d-93eb-b5d641ba1b59",
+            "id": "a30cd1d3-32a4-4767-94f3-907e0e559a51",
             "data": {
               "type": "tm.Process",
               "name": "Git Push",
@@ -212,12 +208,12 @@
               "protocol": "",
               "threats": []
             },
-            "id": "b9e75355-c99a-4a62-907c-523990b94813",
+            "id": "e569ff51-fc70-47d9-b1a8-fa920ff8865f",
             "source": {
-              "cell": "48473ee1-e653-4718-96e3-98add03ea106"
+              "cell": "d1a3c7cf-45c8-43e0-a994-b634bc0175cb"
             },
             "target": {
-              "cell": "629a3adb-f5ef-483d-93eb-b5d641ba1b59"
+              "cell": "a30cd1d3-32a4-4767-94f3-907e0e559a51"
             }
           },
           {
@@ -233,19 +229,19 @@
               "isTrustBoundary": true,
               "hasOpenThreats": false
             },
-            "id": "aad99280-00c7-44b2-8c9e-cf01b1039ccb",
+            "id": "26471c69-bd34-4e31-8250-f969ee0f3f60",
             "source": {
-              "x": 150,
-              "y": 180
+              "x": 210,
+              "y": 100
             },
             "target": {
-              "x": 100,
-              "y": 600
+              "x": 210,
+              "y": 410
             },
             "vertices": [
               {
-                "x": 440,
-                "y": 390
+                "x": 510,
+                "y": 290
               }
             ]
           },
@@ -280,12 +276,12 @@
               "protocol": "",
               "threats": []
             },
-            "id": "f518f9ec-282d-49e7-b471-4f67b5a2f12f",
+            "id": "c4369001-5fe9-444d-842c-79e9d2065424",
             "source": {
-              "cell": "629a3adb-f5ef-483d-93eb-b5d641ba1b59"
+              "cell": "a30cd1d3-32a4-4767-94f3-907e0e559a51"
             },
             "target": {
-              "cell": "993b03a9-16be-41d3-9181-a8b7c07da2f9"
+              "cell": "e0d413bf-4cde-49fa-8f0b-28c5ecfeef88"
             }
           },
           {
@@ -319,13 +315,14 @@
               "protocol": "",
               "threats": []
             },
-            "id": "8820d9f8-c29d-4521-b0d6-3da6a26bd831",
+            "id": "c5ec3907-ef0d-41f4-8aa2-f0faf0f2831a",
             "source": {
-              "cell": "993b03a9-16be-41d3-9181-a8b7c07da2f9"
+              "cell": "e0d413bf-4cde-49fa-8f0b-28c5ecfeef88"
             },
             "target": {
-              "cell": "ce761f3c-23d7-4738-94a0-dfab8bf69299"
-            }
+              "cell": "8cc089e5-28c4-4a26-8ab5-4f4cda50b9cb"
+            },
+            "vertices": []
           },
           {
             "shape": "flow",
@@ -358,56 +355,17 @@
               "protocol": "",
               "threats": []
             },
-            "id": "eb884429-dc21-40fb-8f19-de1a6cb3083f",
+            "id": "121b8edb-59b2-4758-8fac-21456e24026e",
             "source": {
-              "cell": "90676ca1-391c-4311-91ea-47fea50f04cf"
+              "cell": "3f2d7d44-d3fe-4114-8c32-9a72243b42ac"
             },
             "target": {
-              "cell": "40cc67d9-ddca-416a-be37-6aae794d705e"
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Data Flow",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "id": "0b588ee6-8e8f-43a6-8a12-5402b6c74733",
-            "source": {
-              "cell": "40cc67d9-ddca-416a-be37-6aae794d705e"
-            },
-            "target": {
-              "cell": "ce761f3c-23d7-4738-94a0-dfab8bf69299"
+              "cell": "8cc089e5-28c4-4a26-8ab5-4f4cda50b9cb"
             },
             "vertices": [
               {
-                "x": 640,
-                "y": 90
+                "x": 760,
+                "y": -7
               }
             ]
           },
@@ -442,12 +400,12 @@
               "protocol": "",
               "threats": []
             },
-            "id": "76b6e9a8-3007-455a-8dc9-50289489d26b",
+            "id": "a254b092-3cb4-4014-89af-9fefc04835c8",
             "source": {
-              "cell": "0ea02872-a899-491c-8dea-7f679595564c"
+              "cell": "7b6aeeb1-4218-4419-b208-9f48b97aed2d"
             },
             "target": {
-              "cell": "a256a3c3-954b-47f6-b0c8-b581588061c3"
+              "cell": "3f2d7d44-d3fe-4114-8c32-9a72243b42ac"
             }
           },
           {
@@ -481,17 +439,95 @@
               "protocol": "",
               "threats": []
             },
-            "id": "b288844f-3c25-4922-a474-6e19fdb3a455",
+            "id": "20146a85-c5b2-4ebe-8b2b-7ba4761b2b12",
             "source": {
-              "cell": "40cc67d9-ddca-416a-be37-6aae794d705e"
+              "cell": "e0d413bf-4cde-49fa-8f0b-28c5ecfeef88"
             },
             "target": {
-              "cell": "a256a3c3-954b-47f6-b0c8-b581588061c3"
+              "cell": "97cb2631-13ab-47d9-8c6a-5a4c8bac7fce"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "5d31c777-f090-4158-94e4-115b10ee1070",
+            "source": {
+              "cell": "97cb2631-13ab-47d9-8c6a-5a4c8bac7fce"
+            },
+            "target": {
+              "cell": "a81fd0cd-da88-4fd8-9ae8-62e08618edf5"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "7d85bc80-642c-4236-a2c4-6d0ca0693ec6",
+            "source": {
+              "cell": "3f2d7d44-d3fe-4114-8c32-9a72243b42ac"
+            },
+            "target": {
+              "cell": "a81fd0cd-da88-4fd8-9ae8-62e08618edf5"
             },
             "vertices": [
               {
-                "x": 930,
-                "y": 140
+                "x": 1056,
+                "y": 40
               }
             ]
           },
@@ -526,12 +562,12 @@
               "protocol": "",
               "threats": []
             },
-            "id": "2b5943bd-9e8a-4f58-bff4-93beed6b9dd9",
+            "id": "e78c976e-b6f5-4c5b-8542-d7bb297e1919",
             "source": {
-              "cell": "5627aaa1-a988-41af-a04d-e95e583a880b"
+              "cell": "7012c5e6-aa56-4d2f-a7d6-730a2a8504a5"
             },
             "target": {
-              "cell": "dfe22909-2ef2-49e6-96dd-c52f040b75d4"
+              "cell": "97cb2631-13ab-47d9-8c6a-5a4c8bac7fce"
             }
           },
           {
@@ -565,12 +601,12 @@
               "protocol": "",
               "threats": []
             },
-            "id": "41a46315-a64d-4662-b311-9c7a45b14be0",
+            "id": "341d961f-4029-4512-910e-bd8edadc6c02",
             "source": {
-              "cell": "dfe22909-2ef2-49e6-96dd-c52f040b75d4"
+              "cell": "a24c1ed2-9c0f-443b-837f-89e6057c8bcf"
             },
             "target": {
-              "cell": "0ea02872-a899-491c-8dea-7f679595564c"
+              "cell": "7012c5e6-aa56-4d2f-a7d6-730a2a8504a5"
             }
           },
           {
@@ -604,12 +640,92 @@
               "protocol": "",
               "threats": []
             },
-            "id": "e776bd19-d57c-46c9-9f9a-98d24ac1fca5",
+            "id": "9a6beb83-6a89-470d-b281-cf0d4a902f31",
             "source": {
-              "cell": "0ea02872-a899-491c-8dea-7f679595564c"
+              "cell": "97cb2631-13ab-47d9-8c6a-5a4c8bac7fce"
             },
             "target": {
-              "cell": "00319764-edf9-429f-be64-0a6ba83c22ec"
+              "cell": "8963a6ed-0a0d-42fd-8710-5288a916f56a"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "ce480304-5eb9-4dfd-ad29-1c5bab82d258",
+            "source": {
+              "cell": "97cb2631-13ab-47d9-8c6a-5a4c8bac7fce"
+            },
+            "target": {
+              "cell": "fe83a71f-afcb-46d9-8529-5bf1d9b0a7c6"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "47ed3405-8cb5-488b-ad4c-c0cd3505d685",
+            "source": {
+              "cell": "653423f2-76c9-4e0e-bfb2-a0feb6051d17"
+            },
+            "target": {
+              "cell": "fe83a71f-afcb-46d9-8529-5bf1d9b0a7c6"
             }
           },
           {
@@ -643,12 +759,12 @@
               "protocol": "",
               "threats": []
             },
-            "id": "74c90ec2-489d-45c5-b3a1-d66f24f679fc",
+            "id": "a5087156-53f7-448f-9fcc-da10f1513598",
             "source": {
-              "cell": "0ea02872-a899-491c-8dea-7f679595564c"
+              "cell": "97cb2631-13ab-47d9-8c6a-5a4c8bac7fce"
             },
             "target": {
-              "cell": "a0fd8ab4-41f4-4613-bd15-84823f2180a7"
+              "cell": "e2ee2910-714a-405d-be8c-109ec375dcd8"
             }
           },
           {
@@ -682,12 +798,12 @@
               "protocol": "",
               "threats": []
             },
-            "id": "a450f80e-56ba-4a40-9432-63c3ca51fddc",
+            "id": "a9726ca4-45fe-46c6-8793-935ac77d9852",
             "source": {
-              "cell": "a0fd8ab4-41f4-4613-bd15-84823f2180a7"
+              "cell": "e2ee2910-714a-405d-be8c-109ec375dcd8"
             },
             "target": {
-              "cell": "6d6bdc00-3392-45e3-8a0a-411af6550013"
+              "cell": "a7b46dd7-9552-46e3-942d-73ccaac2f6c2"
             }
           },
           {
@@ -721,12 +837,12 @@
               "protocol": "",
               "threats": []
             },
-            "id": "17cb5c94-d48f-47ee-be7a-1e2fe20f8d65",
+            "id": "09c93492-ef4d-4a7c-bbf8-f2e676ae29bb",
             "source": {
-              "cell": "00319764-edf9-429f-be64-0a6ba83c22ec"
+              "cell": "8963a6ed-0a0d-42fd-8710-5288a916f56a"
             },
             "target": {
-              "cell": "66feedce-a226-453a-ab7e-05125f7a90e1"
+              "cell": "3d0ac109-6817-417e-b97b-797f17a97913"
             }
           },
           {
@@ -760,12 +876,12 @@
               "protocol": "",
               "threats": []
             },
-            "id": "93a8ed78-c3bb-46dd-a9cb-e36a1365569e",
+            "id": "1c90203e-40ea-4ef7-8aef-ddfdc6cff987",
             "source": {
-              "cell": "0ea02872-a899-491c-8dea-7f679595564c"
+              "cell": "3d0ac109-6817-417e-b97b-797f17a97913"
             },
             "target": {
-              "cell": "65c3acc4-6653-45ab-8d13-23c087a267a7"
+              "cell": "a6cc717f-6caf-4d36-be82-d4adaf0ba299"
             }
           },
           {
@@ -799,95 +915,17 @@
               "protocol": "",
               "threats": []
             },
-            "id": "8e0abdf1-93a8-447a-b0b5-5a5ad4d54b9f",
+            "id": "e050c76a-cfad-46a0-a27b-bf2b47185f73",
             "source": {
-              "cell": "eaacdbc2-7c81-422c-b84f-38a732f71e7d"
+              "cell": "3f2d7d44-d3fe-4114-8c32-9a72243b42ac"
             },
             "target": {
-              "cell": "65c3acc4-6653-45ab-8d13-23c087a267a7"
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Data Flow",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "id": "f9fe352d-9497-43c9-b140-8fdebd703ddb",
-            "source": {
-              "cell": "66feedce-a226-453a-ab7e-05125f7a90e1"
-            },
-            "target": {
-              "cell": "e9eff763-4f9e-4a72-84bf-7a2389104fe7"
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Data Flow",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "id": "d4a7a313-2fe6-47ea-b16a-0c2e56c010ae",
-            "source": {
-              "cell": "40cc67d9-ddca-416a-be37-6aae794d705e"
-            },
-            "target": {
-              "cell": "e9eff763-4f9e-4a72-84bf-7a2389104fe7"
+              "cell": "a6cc717f-6caf-4d36-be82-d4adaf0ba299"
             },
             "vertices": [
               {
-                "x": 1660,
-                "y": 80
+                "x": 1640,
+                "y": 10
               }
             ]
           },
@@ -922,17 +960,17 @@
               "protocol": "",
               "threats": []
             },
-            "id": "1f6f50f5-3f47-4c95-8636-5e49d9c8df72",
+            "id": "2a2229c8-3d74-4b5d-8efe-a8cfd7e72b85",
             "source": {
-              "cell": "6d6bdc00-3392-45e3-8a0a-411af6550013"
+              "cell": "a7b46dd7-9552-46e3-942d-73ccaac2f6c2"
             },
             "target": {
-              "cell": "e9eff763-4f9e-4a72-84bf-7a2389104fe7"
+              "cell": "a6cc717f-6caf-4d36-be82-d4adaf0ba299"
             },
             "vertices": [
               {
-                "x": 1740,
-                "y": 590
+                "x": 1720,
+                "y": 430
               }
             ]
           },
@@ -949,7 +987,7 @@
               "isTrustBoundary": true,
               "hasOpenThreats": false
             },
-            "id": "0d3b988c-6441-4893-8853-def85618a22c",
+            "id": "a4804a9b-c66c-4a22-b663-f0c8af379a7b",
             "labels": [
               ""
             ],
@@ -958,83 +996,20 @@
               "y": 170
             },
             "target": {
-              "x": 1840,
-              "y": 670
+              "x": 1905,
+              "y": 505
             },
             "vertices": [
               {
-                "x": 1580,
-                "y": 430
+                "x": 1640,
+                "y": 280
               }
             ]
           },
           {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Data Flow",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "id": "11d39da5-53ef-4a7c-8de4-f074b1440949",
-            "source": {
-              "cell": "993b03a9-16be-41d3-9181-a8b7c07da2f9"
-            },
-            "target": {
-              "cell": "0ea02872-a899-491c-8dea-7f679595564c"
-            }
-          },
-          {
             "position": {
-              "x": 100,
-              "y": 436
-            },
-            "size": {
-              "width": 112.5,
-              "height": 60
-            },
-            "attrs": {
-              "text": {
-                "text": "Developer \nLocal Environment \nBoundary"
-              }
-            },
-            "visible": true,
-            "shape": "td-text-block",
-            "zIndex": 11,
-            "id": "89cf012d-ac39-46ea-b351-7426098560c5",
-            "data": {
-              "type": "tm.Text",
-              "name": "Developer \nLocal Environment \nBoundary",
-              "hasOpenThreats": false
-            }
-          },
-          {
-            "position": {
-              "x": 511.9999999999998,
-              "y": 350
+              "x": 620,
+              "y": 240
             },
             "size": {
               "width": 80,
@@ -1052,8 +1027,8 @@
             },
             "visible": true,
             "shape": "process",
-            "zIndex": 12,
-            "id": "993b03a9-16be-41d3-9181-a8b7c07da2f9",
+            "zIndex": 11,
+            "id": "e0d413bf-4cde-49fa-8f0b-28c5ecfeef88",
             "data": {
               "type": "tm.Process",
               "name": "Process\nCode Push",
@@ -1070,8 +1045,8 @@
           },
           {
             "position": {
-              "x": 486,
-              "y": 259
+              "x": 600,
+              "y": 140
             },
             "size": {
               "width": 120,
@@ -1094,8 +1069,8 @@
             },
             "visible": true,
             "shape": "store",
-            "zIndex": 13,
-            "id": "ce761f3c-23d7-4738-94a0-dfab8bf69299",
+            "zIndex": 12,
+            "id": "8cc089e5-28c4-4a26-8ab5-4f4cda50b9cb",
             "data": {
               "type": "tm.Store",
               "name": "Git Repository",
@@ -1110,8 +1085,8 @@
               "storesInventory": false,
               "threats": [
                 {
-                  "id": "c9bb576d-cd03-4cd6-9381-2c5561256790",
-                  "title": "New STRIDE threat",
+                  "id": "909eb509-a3b9-485d-981b-171827477866",
+                  "title": "Attacker uploads malicious code to internal Git repository",
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Tampering",
@@ -1119,22 +1094,16 @@
                   "mitigation": "Ensure Git software is patched\nBackground check each employee\nFollow the principal of Least Privilege and only employees with a need to access the Git repository have access.\nEnsure Git is only available on VPN",
                   "modelType": "STRIDE",
                   "new": false,
-                  "number": 7,
+                  "number": 2,
                   "score": ""
                 }
-              ],
-              "threatFrequency": {
-                "tampering": 1,
-                "repudiation": 0,
-                "informationDisclosure": 0,
-                "denialOfService": 0
-              }
+              ]
             }
           },
           {
             "position": {
-              "x": 1009.75,
-              "y": -140
+              "x": 1050,
+              "y": -150
             },
             "size": {
               "width": 112.5,
@@ -1152,8 +1121,8 @@
             },
             "visible": true,
             "shape": "actor",
-            "zIndex": 15,
-            "id": "90676ca1-391c-4311-91ea-47fea50f04cf",
+            "zIndex": 13,
+            "id": "7b6aeeb1-4218-4419-b208-9f48b97aed2d",
             "data": {
               "type": "tm.Actor",
               "name": "Administrator",
@@ -1167,8 +1136,8 @@
           },
           {
             "position": {
-              "x": 1036,
-              "y": 23
+              "x": 1076.25,
+              "y": -50
             },
             "size": {
               "width": 60,
@@ -1186,8 +1155,8 @@
             },
             "visible": true,
             "shape": "process",
-            "zIndex": 16,
-            "id": "40cc67d9-ddca-416a-be37-6aae794d705e",
+            "zIndex": 14,
+            "id": "3f2d7d44-d3fe-4114-8c32-9a72243b42ac",
             "data": {
               "type": "tm.Process",
               "name": "Manage",
@@ -1204,75 +1173,12 @@
           },
           {
             "position": {
-              "x": 486,
-              "y": 679.0000000000023
-            },
-            "size": {
-              "width": 160,
-              "height": 60
-            },
-            "attrs": {
-              "text": {
-                "text": "Dependency Repository"
-              },
-              "topLine": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
-                "strokeDasharray": null
-              },
-              "bottomLine": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
-                "strokeDasharray": null
-              }
-            },
-            "visible": true,
-            "shape": "store",
-            "zIndex": 17,
-            "id": "5627aaa1-a988-41af-a04d-e95e583a880b",
-            "data": {
-              "type": "tm.Store",
-              "name": "Dependency Repository",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": true,
-              "isALog": false,
-              "isEncrypted": false,
-              "isSigned": false,
-              "storesCredentials": false,
-              "storesInventory": false,
-              "threats": [
-                {
-                  "id": "594c4398-342f-403f-ac05-5b7ec2deec40",
-                  "title": "Supply Chain Attack Against Upstream Dependencies",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Tampering",
-                  "description": "A dependency is compromised by a malicious actor who inserts malicious code to hijack end-user devices",
-                  "mitigation": "Assess dependencies with SAST/DAST tools to find vulnerabilities\nMinimise use of external dependencies\nRegularly update dependencies to patch undiscovered vulnerabilities, however, do not update until dependencies have been assessed for new vulnerabilities\n",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 2,
-                  "score": ""
-                }
-              ],
-              "threatFrequency": {
-                "tampering": 1,
-                "repudiation": 0,
-                "informationDisclosure": 0,
-                "denialOfService": 0
-              }
-            }
-          },
-          {
-            "position": {
-              "x": 860,
-              "y": 345
+              "x": 930,
+              "y": 230
             },
             "size": {
               "width": 90,
-              "height": 90
+              "height": 100
             },
             "attrs": {
               "text": {
@@ -1286,8 +1192,8 @@
             },
             "visible": true,
             "shape": "process",
-            "zIndex": 18,
-            "id": "0ea02872-a899-491c-8dea-7f679595564c",
+            "zIndex": 15,
+            "id": "97cb2631-13ab-47d9-8c6a-5a4c8bac7fce",
             "data": {
               "type": "tm.Process",
               "name": "CI Pipeline\nExecution",
@@ -1301,33 +1207,25 @@
               "privilegeLevel": "",
               "threats": [
                 {
-                  "id": "4cb315e6-0de7-41eb-a79f-cab806d84525",
+                  "id": "41ae1db2-a416-4f1c-be9c-845dc7d6a566",
                   "title": "Leaked Pipeline Credentials",
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Spoofing",
                   "description": "An attacker could compromise credentials used in the pipeline and use them for malicious purposes",
-                  "mitigation": "Expire and rotate credentials and secrets regularly. Encrypt credentials wherever they must be stored",
+                  "mitigation": "Expire and rotate credentials and secrets regularly.\nEncrypt credentials wherever they must be stored\nFollow principal of Least Privilege to minimise risk if credentials are leaked",
                   "modelType": "STRIDE",
                   "new": false,
-                  "number": 6,
+                  "number": 5,
                   "score": ""
                 }
-              ],
-              "threatFrequency": {
-                "spoofing": 1,
-                "tampering": 0,
-                "repudiation": 0,
-                "informationDisclosure": 0,
-                "denialOfService": 0,
-                "elevationOfPrivilege": 0
-              }
+              ]
             }
           },
           {
             "position": {
-              "x": 845,
-              "y": 199.0000000000001
+              "x": 915,
+              "y": 80
             },
             "size": {
               "width": 120,
@@ -1350,8 +1248,8 @@
             },
             "visible": true,
             "shape": "store",
-            "zIndex": 19,
-            "id": "a256a3c3-954b-47f6-b0c8-b581588061c3",
+            "zIndex": 16,
+            "id": "a81fd0cd-da88-4fd8-9ae8-62e08618edf5",
             "data": {
               "type": "tm.Store",
               "name": "Pipeline Artifacts\nStore",
@@ -1366,35 +1264,29 @@
               "storesInventory": false,
               "threats": [
                 {
-                  "id": "628dc8c6-c28b-4ea4-a7fe-7bd9672fd43e",
+                  "id": "469f5118-72f7-4798-9ac2-f03515d727c5",
                   "title": "Pipeline artifacts may contain sensitive information",
                   "status": "Open",
                   "severity": "Medium",
-                  "type": "Information disclosure",
+                  "type": "Tampering",
                   "description": "Careless logging and artifact generation may result in sensitive data contained in artifacts",
                   "mitigation": "Do not log secrets\nRequire authentication to access data stores",
                   "modelType": "STRIDE",
                   "new": false,
-                  "number": 5,
+                  "number": 4,
                   "score": ""
                 }
-              ],
-              "threatFrequency": {
-                "tampering": 0,
-                "repudiation": 0,
-                "informationDisclosure": 1,
-                "denialOfService": 0
-              }
+              ]
             }
           },
           {
             "position": {
-              "x": 730,
-              "y": 460
+              "x": 830,
+              "y": 370.00000000000045
             },
             "size": {
-              "width": 130,
-              "height": 150
+              "width": 140,
+              "height": 130
             },
             "attrs": {
               "text": {
@@ -1408,8 +1300,8 @@
             },
             "visible": true,
             "shape": "process",
-            "zIndex": 20,
-            "id": "dfe22909-2ef2-49e6-96dd-c52f040b75d4",
+            "zIndex": 17,
+            "id": "7012c5e6-aa56-4d2f-a7d6-730a2a8504a5",
             "data": {
               "type": "tm.Process",
               "name": "Fetch\nDependencies",
@@ -1426,12 +1318,69 @@
           },
           {
             "position": {
-              "x": 1096,
-              "y": 350
+              "x": 590,
+              "y": 461.00000000000006
             },
             "size": {
-              "width": 70,
-              "height": 80
+              "width": 140,
+              "height": 70
+            },
+            "attrs": {
+              "text": {
+                "text": "Dependency Repository"
+              },
+              "topLine": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "zIndex": 18,
+            "id": "a24c1ed2-9c0f-443b-837f-89e6057c8bcf",
+            "data": {
+              "type": "tm.Store",
+              "name": "Dependency Repository",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": [
+                {
+                  "id": "4f64746c-cd35-4ba6-bedf-c3fbe4b4fb38",
+                  "title": "Supply Chain Attack Against Upstream Dependencies",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "A dependency is compromised by a malicious actor who inserts malicious code to hijack end-user devices",
+                  "mitigation": "Assess dependencies with SAST/DAST tools to find vulnerabilities\nMinimise use of external dependencies\nRegularly update dependencies to patch undiscovered vulnerabilities, however, do not update until dependencies have been assessed for new vulnerabilities\n",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 3,
+                  "score": ""
+                }
+              ]
+            }
+          },
+          {
+            "position": {
+              "x": 1162.5,
+              "y": 250
+            },
+            "size": {
+              "width": 60,
+              "height": 60
             },
             "attrs": {
               "text": {
@@ -1445,8 +1394,8 @@
             },
             "visible": true,
             "shape": "process",
-            "zIndex": 21,
-            "id": "00319764-edf9-429f-be64-0a6ba83c22ec",
+            "zIndex": 19,
+            "id": "8963a6ed-0a0d-42fd-8710-5288a916f56a",
             "data": {
               "type": "tm.Process",
               "name": "Security\nGate",
@@ -1463,122 +1412,11 @@
           },
           {
             "position": {
-              "x": 1096,
-              "y": 568
-            },
-            "size": {
-              "width": 60,
-              "height": 60
-            },
-            "attrs": {
-              "text": {
-                "text": "DAST"
-              },
-              "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
-                "strokeDasharray": null
-              }
-            },
-            "visible": true,
-            "shape": "process",
-            "zIndex": 22,
-            "id": "a0fd8ab4-41f4-4613-bd15-84823f2180a7",
-            "data": {
-              "type": "tm.Process",
-              "name": "DAST",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "handlesCardPayment": false,
-              "handlesGoodsOrServices": false,
-              "isWebApplication": false,
-              "privilegeLevel": "",
-              "threats": []
-            }
-          },
-          {
-            "position": {
-              "x": 1250,
-              "y": 650
-            },
-            "size": {
-              "width": 70,
-              "height": 70
-            },
-            "attrs": {
-              "text": {
-                "text": "Deploy\nAnd\nTest"
-              },
-              "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
-                "strokeDasharray": null
-              }
-            },
-            "visible": true,
-            "shape": "process",
-            "zIndex": 23,
-            "id": "6d6bdc00-3392-45e3-8a0a-411af6550013",
-            "data": {
-              "type": "tm.Process",
-              "name": "Deploy\nAnd\nTest",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "handlesCardPayment": false,
-              "handlesGoodsOrServices": false,
-              "isWebApplication": false,
-              "privilegeLevel": "",
-              "threats": []
-            }
-          },
-          {
-            "position": {
-              "x": 1285,
-              "y": 330
+              "x": 910,
+              "y": 646
             },
             "size": {
               "width": 130,
-              "height": 120
-            },
-            "attrs": {
-              "text": {
-                "text": "Build, Sign\nAnd Publish\nImage"
-              },
-              "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
-                "strokeDasharray": null
-              }
-            },
-            "visible": true,
-            "shape": "process",
-            "zIndex": 24,
-            "id": "66feedce-a226-453a-ab7e-05125f7a90e1",
-            "data": {
-              "type": "tm.Process",
-              "name": "Build, Sign\nAnd Publish\nImage",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "handlesCardPayment": false,
-              "handlesGoodsOrServices": false,
-              "isWebApplication": false,
-              "privilegeLevel": "",
-              "threats": []
-            }
-          },
-          {
-            "position": {
-              "x": 880,
-              "y": 890
-            },
-            "size": {
-              "width": 110,
               "height": 110
             },
             "attrs": {
@@ -1593,8 +1431,8 @@
             },
             "visible": true,
             "shape": "process",
-            "zIndex": 25,
-            "id": "65c3acc4-6653-45ab-8d13-23c087a267a7",
+            "zIndex": 20,
+            "id": "fe83a71f-afcb-46d9-8529-5bf1d9b0a7c6",
             "data": {
               "type": "tm.Process",
               "name": "SonarQube\nCode\nAnalysis",
@@ -1611,8 +1449,8 @@
           },
           {
             "position": {
-              "x": 1200,
-              "y": 915
+              "x": 1162.5,
+              "y": 671
             },
             "size": {
               "width": 120,
@@ -1633,8 +1471,8 @@
             },
             "visible": true,
             "shape": "store",
-            "zIndex": 26,
-            "id": "eaacdbc2-7c81-422c-b84f-38a732f71e7d",
+            "zIndex": 21,
+            "id": "653423f2-76c9-4e0e-bfb2-a0feb6051d17",
             "data": {
               "type": "tm.Store",
               "name": "SonarQube\nDatabase",
@@ -1652,8 +1490,119 @@
           },
           {
             "position": {
-              "x": 1674,
-              "y": 360
+              "x": 1162.5,
+              "y": 405.00000000000045
+            },
+            "size": {
+              "width": 60,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "DAST"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "zIndex": 22,
+            "id": "e2ee2910-714a-405d-be8c-109ec375dcd8",
+            "data": {
+              "type": "tm.Process",
+              "name": "DAST",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 1300,
+              "y": 440.00000000000045
+            },
+            "size": {
+              "width": 60,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Deploy\nAnd\nTest"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "zIndex": 23,
+            "id": "a7b46dd7-9552-46e3-942d-73ccaac2f6c2",
+            "data": {
+              "type": "tm.Process",
+              "name": "Deploy\nAnd\nTest",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 1360,
+              "y": 230
+            },
+            "size": {
+              "width": 100,
+              "height": 100
+            },
+            "attrs": {
+              "text": {
+                "text": "Build, Sign\nAnd Publish\nImage"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "zIndex": 24,
+            "id": "3d0ac109-6817-417e-b97b-797f17a97913",
+            "data": {
+              "type": "tm.Process",
+              "name": "Build, Sign\nAnd Publish\nImage",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 1714,
+              "y": 250
             },
             "size": {
               "width": 150,
@@ -1676,8 +1625,8 @@
             },
             "visible": true,
             "shape": "store",
-            "zIndex": 27,
-            "id": "e9eff763-4f9e-4a72-84bf-7a2389104fe7",
+            "zIndex": 25,
+            "id": "a6cc717f-6caf-4d36-be82-d4adaf0ba299",
             "data": {
               "type": "tm.Store",
               "name": "Container Repository\nDockerHub",
@@ -1692,7 +1641,7 @@
               "storesInventory": false,
               "threats": [
                 {
-                  "id": "cd48f339-9f65-40ef-b7d0-09fec146c9c4",
+                  "id": "aff7ea97-600c-47d4-95c8-c686a0049005",
                   "title": "Registry Injection",
                   "status": "Open",
                   "severity": "Medium",
@@ -1701,22 +1650,16 @@
                   "mitigation": "Require authentication to upload images\nUse RBAC to ensure only the pipeline and approved users can push images to the repository",
                   "modelType": "STRIDE",
                   "new": false,
-                  "number": 4,
+                  "number": 6,
                   "score": ""
                 }
-              ],
-              "threatFrequency": {
-                "tampering": 1,
-                "repudiation": 0,
-                "informationDisclosure": 0,
-                "denialOfService": 0
-              }
+              ]
             }
           },
           {
             "position": {
-              "x": 1772,
-              "y": 568
+              "x": 1807,
+              "y": 370
             },
             "size": {
               "width": 112.5,
@@ -1729,8 +1672,8 @@
             },
             "visible": true,
             "shape": "td-text-block",
-            "zIndex": 28,
-            "id": "d4bce440-9e51-49fe-b392-5027548ecccf",
+            "zIndex": 26,
+            "id": "f79ac7c2-9f15-4fd8-9b0b-2a954d45d10a",
             "data": {
               "type": "tm.Text",
               "name": "Registry Boundary",
@@ -1741,8 +1684,8 @@
         "description": "CI pipeline for DevSecOps Labs"
       }
     ],
-    "diagramTop": 1,
+    "diagramTop": 2,
     "reviewer": "",
-    "threatTop": 7
+    "threatTop": 6
   }
 }
